@@ -1,0 +1,7 @@
+<h1>Nueva mascota</h1>
+
+
+<%= form_tag pets_path, method: "post" do %>
+  <%= text_field :pet, :name %>
+  <%= submit_tag("Crear mascota") %>
+<% end %>
